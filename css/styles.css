@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: roboto, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 3rem;
+  background: rgb(45, 42, 42);
+  background: linear-gradient(
+    180deg,
+    rgba(45, 42, 42, 1) 0%,
+    rgba(0, 0, 0, 1) 4%,
+    rgba(9, 10, 28, 1) 9%,
+    rgba(72, 79, 225, 1) 100%
+  );
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  background-color: rgb(0, 3, 73);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  color: whitesmoke;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.navegationMenu {
+  display: flex;
+  justify-content: end;
+  margin-right: 1rem;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 5px;
+}
+
+.logoWeb {
+  padding: 0.3rem;
+}
+
+main {
+  padding: 5rem 0;
+}
+
+.pagetittle {
+  color: whitesmoke;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.mainContent {
+  background-color: whitesmoke;
+  box-shadow: rgb(226, 238, 247) 0px 0px 10px 1px;
+  padding: 2rem;
+  margin: 1.25rem;
+  border-radius: 10px;
+}
+
+.banner-principal {
+  width: 100%;
+}
+
+.promos {
+  background-color: rgb(0, 3, 73);
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.grid-promociones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.promo-imagen {
+  width: 100%;
+}
+
+.contenedor-cartelera {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgb(0, 3, 73);
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.tituloPelicula {
+  color: whitesmoke;
+}
+
+.contenedor-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor-flex-pelicula {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-cartelera {
+  height: 18rem;
+  width: 10rem;
+  border-radius: 5%;
+  box-shadow: rgba(72, 79, 225, 1) 0px 0px 10px 1px;
+}
+
+.imagen-cartelera:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.tituloPelicula {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  padding: 0.5rem;
+}
+
+.boton-pelicula {
+  display: block;
+  margin: 0 auto;
+
+  padding: 0.2rem;
+}
+
+.boton-pelicula:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.contenedor-form {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #080556;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem 10px;
+}
+
+.secciones-resena {
+  background-color: #080556;
+  box-shadow: rgba(72, 79, 225, 1) 0px 0px 10px 1px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.grid-comments {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "taquillera generales generales"
+    "taquillera generales generales"
+    "taquillera generales generales"
+    "opinar opinar opinar";
+
+  width: 100%;
+}
+
+.opinion-caja {
+  background-color: rgb(92, 179, 255);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.taquillera {
+  grid-area: taquillera;
+}
+
+.opiniones-generales {
+  grid-area: generales;
+}
+
+.opinar {
+  grid-area: opinar;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+h4 {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-left: 0.5rem;
+}
+
+.titulo-resena {
+  font-size: 1.7rem;
+  color: whitesmoke;
+  margin: 0.5rem;
+}
+.puntos {
+  font-size: 1.4rem;
+  color: whitesmoke;
+  margin: 0.5rem;
+}
+.opinion {
+  font-size: 1rem;
+  color: whitesmoke;
+  margin: 0.5rem;
+}
+
+.form-resena {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  background-color: #080556;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 10px;
+}
+
+.boton-resena {
+  padding: 0.2rem;
+  margin: 0.5rem;
+}
+
+.boton-resena:hover {
+  transform: scale(1.1, 1.1);
+}
+
+textarea {
+  margin: 0.5rem;
+}
+
+/*RESPONSIVE*/
+
+@media (min-width: 0px) and (max-width: 699.5px) {
+  body {
+    font-size: 18px;
+  }
+
+  .navegationMenu {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+  }
+
+  .mainForm {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .grid-promociones {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 70%;
+    max-width: 40rem;
+  }
+
+  form input {
+    margin: 0.5rem;
+    width: 250px;
+    height: 30px;
+  }
+
+  form label {
+    margin: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .grid-comments {
+    grid-gap: 1rem;
+    grid-template-areas:
+      "taquillera "
+      "generales "
+      "opinar ";
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 699.6px) and (max-width: 1050.5px) {
+  body {
+    font-size: 20px;
+  }
+
+  .navegationMenu {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+  }
+
+  footer p {
+    font-size: 1.1rem;
+  }
+
+  .mainForm {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .grid-promociones {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  form {
+    width: 70%;
+    max-width: 40rem;
+  }
+
+  form input {
+    margin: 0.5rem;
+    width: 300px;
+    height: 30px;
+  }
+
+  form label {
+    margin: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .grid-comments {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "taquillera  generales"
+      "taquillera  generales"
+      "taquillera  generales"
+      "opinar opinar";
+  }
+}
+@media (min-width: 1050.6px) {
+  body {
+    font-size: 22px;
+  }
+
+  .navegationMenu {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+
+  .mainForm {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  form input {
+    margin: 0.5rem;
+    width: 400px;
+    height: 30px;
+  }
+  form label {
+    margin: 1rem;
+    font-size: 1.8rem;
+  }
+}

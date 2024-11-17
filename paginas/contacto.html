@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- NAV BAR RESPONSIVE-->
+
+        <a class="nav-link" href="../index.html"
+          ><img class="logoWeb" src="/imagenes/casa.png" alt="Inicio"
+        /></a>
+
+        <ul class="navegationMenu">
+          <li>
+            <a class="nav-link" href="/paginas/cartelera.html">Cartelera</a>
+          </li>
+          <!-- PROXIMAMENTE
+          <li>
+            
+            <a class="nav-link" href="#">Tienda</a>
+          </li>
+          --> 
+          <li>
+            <a class="nav-link" href="/paginas/reviews.html">Reseñas</a>
+          </li>
+          <li>
+            <a class="nav-link" href="/paginas/contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- NAV BAR RESPONSIVE-->
+      </nav>
+    </header>
+    <main>
+      <section><h2 class="pagetittle">Conctacto</h2></section>
+      <section class="mainContent contenedor-form">
+        <form action="https://formspree.io/f/xdkozygv" method="POST">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" />
+
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" />
+
+          <label for="correo">Correo Electronico</label>
+          <input type="email" name="correo" id="correo" />
+
+          <label for="texto">Mensaje</label>
+
+          <textarea type="textarea" name="texto" id="texto" rows="10" cols="40">
+          </textarea>
+          <br />
+          <button class="boton-pelicula" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2024 Kevin Ascanio. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

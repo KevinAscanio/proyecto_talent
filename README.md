@@ -1,0 +1,1 @@
+** Sitio Web de una cadena de cines que nos ofrece un listado de estrenos en peliculas recientes y clasicas. Aqui podemos encontrar las promociones para visitar las sucursales, reseñar nuestras peliculas favoritas y disfrutar de la experiencia de la pantalla grande del entretenimiento**
